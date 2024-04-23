@@ -337,21 +337,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuBtn = document.getElementById("menuBtn");
     const menu = document.getElementById("menu");
     const overlay = document.getElementById("overlay");
-    const mainContent = document.getElementById("main-content"); // Assuming your main content has an id of "main-content"
+    const HTML = document.getElementById("hj"); // Assuming your main content has an id of "main-content"
 
     menuBtn.addEventListener("click", function () {
         menu.style.left = "0";
         overlay.style.display = "block";
-        mainContent.style.overflow = "hidden"; // Disable scrolling for main content
+        HTML.style.overflow = "hidden"; // Disable scrolling for main content
     });
 
     overlay.addEventListener("click", function () {
         menu.style.left = "-300px";
         overlay.style.display = "none";
-        mainContent.style.overflow = "auto"; // Enable scrolling for main content
+        HTML.style.overflow = "auto"; // Enable scrolling for main content
     });
 });
-
 
 
 
